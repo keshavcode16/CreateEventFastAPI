@@ -5,11 +5,11 @@
 Create `.env` file in root directory and copy following statments
 ```
 ENV=local
-REDIS_HOST=localhost
-REDIS_PORT=6379
-LOCAL_DB_URL=sqlite:///./sql_app.db
-REFERENCE_SERVICE_URL=http://127.0.0.1:9000/
-PROCESS_SERVICE_URL=http://127.0.0.1:9001/
+HOST=http://127.0.0.1:8081/
+API_NAME=Oolka API Service
+VERSION=1.1.0
+DB_URL=sqlite:///./sql_app.db
+GOOGLE_MAP_API_KEY=XXXXXXXXXXXXXX
 ```
 
 # Run the following commands to build and up the docker containers in detach mode
