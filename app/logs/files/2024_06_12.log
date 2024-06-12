@@ -1,0 +1,13 @@
+INFO 2024-06-12 01:41:15,073 Processed batch string successfully.
+INFO 2024-06-12 01:41:35,801 Processed batch string successfully.
+INFO 2024-06-12 01:41:48,268 Processed batch string successfully.
+INFO 2024-06-12 01:49:46,801 Processed batch dsbgfgf successfully.
+INFO 2024-06-12 01:50:07,676 Processed batch dsbgfgf successfully.
+ERROR 2024-06-12 04:31:40,037 ERROR:(sqlite3.OperationalError) no such table: events
+[SQL: SELECT events.id AS events_id, events.name AS events_name, events.date AS events_date, events.location AS events_location, events.available_tickets AS events_available_tickets 
+FROM events]
+(Background on this error at: https://sqlalche.me/e/20/e3q8),TYPE:OperationalError,FILENAME:/home/keshav/OolkaAPITask/app/api/v1/crud.py,FunctionName:get_data,LINENUM:39
+ERROR 2024-06-12 05:05:43,774 ERROR:app.api.v1.models.Event() argument after ** must be a mapping, not EventSchema,TYPE:TypeError,FILENAME:/home/keshav/OolkaAPITask/app/api/v1/crud.py,FunctionName:save_data,LINENUM:26
+ERROR 2024-06-12 05:08:15,469 ERROR:app.api.v1.models.Event() argument after ** must be a mapping, not EventSchema,TYPE:TypeError,FILENAME:/home/keshav/OolkaAPITask/app/api/v1/crud.py,FunctionName:save_data,LINENUM:27
+ERROR 2024-06-12 05:10:05,868 ERROR:app.api.v1.models.Event() argument after ** must be a mapping, not EventSchema,TYPE:TypeError,FILENAME:/home/keshav/OolkaAPITask/app/api/v1/crud.py,FunctionName:save_data,LINENUM:27
+ERROR 2024-06-12 06:06:49,303 ERROR:book_event() missing 1 required positional argument: 'num_tickets',TYPE:TypeError,FILENAME:/home/keshav/OolkaAPITask/app/api/v1/events.py,FunctionName:book_event,LINENUM:137

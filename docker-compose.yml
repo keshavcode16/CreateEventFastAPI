@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  project:
+    build: .
+    command: ./manage.sh
+    container_name: ey-assignment-api-ervice
+    ports:
+      - "8081:8081"
+    environment:
+      - ENV=local
+      - HOST=http://127.0.0.1:8081/
+      - API_NAME=EY Assignment API Service
+      - VERSION=1.1.0
