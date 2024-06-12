@@ -14,8 +14,19 @@ PROCESS_SERVICE_URL=http://127.0.0.1:9001/
 
 # Run the following commands to build and up the docker containers in detach mode
 2. docker compose -f docker-compose.yml up --build -d --remove-orphans
-# Another way to setup cab be by creating new enviroment in python and installing requirement.txt file containing packages 
+# Another way to install it locally
+```
+python -m venv projectenv
+source projectenv/bin/activate  
+cd CreateEventFastAPI/
+pip install -r requirements.txt
+uvicorn app.main:app --port=8081 --host 0.0.0.0
+```
 
+# To Run test cases just run below command
+```
+pytest
+```
 
 # Run fastapi swagger on browser
  - http://0.0.0.0:8000/docs
